@@ -35,7 +35,7 @@ def exp(text):
     # text = input("Введите значение для поиска: ")
     with open('Telephone_base.txt', 'r', encoding='utf-8') as f:
         lst = f.read().splitlines()
-    for i in range(int(len(lst))+1):
+    for i in range(int(len(lst)/6)+1):
         if text in lst[i]:
             temp = i % 6
             result = (lst[i-temp:i+5-temp])
